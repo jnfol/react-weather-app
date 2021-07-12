@@ -11,6 +11,10 @@ function App() {
           <source src={background_video} type="video/mp4" />
         </video>
         <div className="card-img-overlay">
+          <form>
+            <input type="search" />
+            <input type="submit" value="Search" />
+          </form>
           <div className="container">
             <div className="row">
               <div className="col-6">
@@ -103,7 +107,12 @@ function App() {
           </div>
         </div>
       </div>
-      );
+      <footer>
+        Coded by{" "}
+        <a href="https://github.com/jnfol/react-weather-app" target="blank">
+          Jessi Follett
+        </a>
+      </footer>
     </div>
   );
 }
