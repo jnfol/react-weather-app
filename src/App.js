@@ -2,6 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./App.css";
 import background_video from "./background_video.mp4";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
   return (
