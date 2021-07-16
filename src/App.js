@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import "./App.css";
 import background_video from "./background_video.mp4";
 import "bootstrap/dist/css/bootstrap.css";
+import SearchEngine from "./Search";
 
 function App() {
   return (
@@ -12,10 +13,7 @@ function App() {
           <source src={background_video} type="video/mp4" />
         </video>
         <div className="card-img-overlay">
-          <form>
-            <input type="search" />
-            <input type="submit" value="Search" />
-          </form>
+          <SearchEngine />
           <div className="container">
             <div className="row">
               <div className="col-6">
