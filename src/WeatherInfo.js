@@ -16,9 +16,7 @@ export default function WeatherInfo(props) {
           </p>
         </div>
         <div className="col-2 text-center">
-          <span role="img" className="mainEmoji" aria-label="sun">
-            ☀
-          </span>
+          <img src={props.data.iconURL} alt={props.data.description} />
         </div>
         <div class="col">
           <span class="mainTemp" id="current-temp">
