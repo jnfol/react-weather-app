@@ -16,19 +16,17 @@ export default function WeatherInfo(props) {
           </p>
         </div>
         <div className="col-2 text-center">
-          <img src={props.data.iconURL} alt={props.data.description} />
+          <img
+            src={props.data.iconURL}
+            alt={props.data.description}
+            className="float-right"
+          />
         </div>
         <div class="col">
           <span class="mainTemp" id="current-temp">
             {Math.round(props.data.temperature)}
           </span>
-          <span className="active" id="F">
-            °F
-          </span>
-          <span class="unit">|</span>
-          <span className="active" id="C">
-            °C
-          </span>
+          <span id="unit">°F</span>
           <p class="card-text-right">
             <span id="humidity">Humidity </span>
             {props.data.humidity}%
