@@ -11,6 +11,7 @@ export default function WeatherSearch(props) {
     console.log(response.data);
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       date: new Date(response.data.dt * 1000),
       city: response.data.name,
       temperature: response.data.main.temp,
@@ -59,7 +60,7 @@ export default function WeatherSearch(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeekForecast />
+        <WeekForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
