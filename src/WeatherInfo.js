@@ -27,6 +27,7 @@ export default function WeatherInfo(props) {
             {Math.round(props.data.temperature)}
           </span>
           <span id="unit">°F</span>
+          <br />
           <p class="card-text-right">
             <span id="humidity">Humidity </span>
             {props.data.humidity}%

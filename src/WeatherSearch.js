@@ -60,6 +60,7 @@ export default function WeatherSearch(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <hr />
         <WeekForecast coordinates={weatherData.coordinates} />
       </div>
     );
